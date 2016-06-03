@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html ng-app="LeHoiViet" xmlns="http://www.w3.org/1999/xhtml" lang="vi-VN" xml:lang="vi-VN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Gamevui.vn</title>
+    <!--Bootstrap core CSS-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
+    <script src="lib/bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="lib/bootstrap/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="view-source:http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="view-source:http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css"></script>
+</head>
+
+<body class="container">
+    <header class="row">
+        <div id="topbar" class="col-md-12">
+            <div class="topbar-left col-md-5 col-xs-12 row">
+                <ul>
+                    <li class="col-xs-5"><a href="#">GameVui.com in English</a></li>
+                    <li class="col-xs-3"><a href="#">Kho game</a></li>
+                    <li class="col-xs-4"><a href="#">Đấu trường</a></li>
+                </ul>
+            </div><!--end:topbar-left-->
+            <div class="topbar-right col-md-7 col-xs-12 row">
+                <form method="POST">
+                    <ul>
+                        <li class="col-sm-2 col-sm-offset-1 col-xs-12"><input type="username" placeholder="Tên đăng nhập" /></li>
+                        <li class="col-sm-2 col-sm-offset-1 col-xs-12"><input type="password" placeholder="Mật khẩu" /></li>
+                        <li class="col-sm-2 col-sm-offset-1 col-xs-12"><button>Đăng nhập</button></li>
+                        <li class="col-sm-3 col-xs-12"><a href="#"> Đăng ký thành viên</a></li>
+                    </ul>
+                    
+                </form>
+            </div><!--end:topbar-right-->
+        </div><!--end:#topbar-->
+
+        <div id="header" class="col-xs-12">
+            <dir class="col-md-5 col-xs-12 row">
+                <div class="nav-logo col-xs-5">
+                    <a href="/"><img class="img-responsive" src="images/logo.png"></a>
+                </div><!--end:nav-logo-->
+                <div class="likebox col-xs-7 col-xs-12">
+                    <div class="share-toolbox"></div>
+                    <div class="sharetip">Thích để tham gia cộng đồng Gamevui</div>
+                </div>
+            </dir>
+            
+            <div class="col-md-7 col-xs-12 row">
+                 <div class="quicksearch col-md-10 col-md-offset-1 col-xs-12">
+                    <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Nhập tên game bạn muốn chơi">
+                          <span class="input-group-addon" id="basic-addon2">Tìm kiếm</span>
+                    </div>
+                </div>
+                <div class="language-tool-box col-md-1 col-xs-12">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/flag-english.png"/><span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#"><img src="images/flag-vietnamese.png"/>Tiếng việt</a></li>
+                        <li><a href="#"><img src="images/flag-english.png"/>Tiếng Anh</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--end:#header-->
+
+        <div id="menu" class="col-md-12">
+            
+        </div><!--end:#menu-->
+    </header><!---->
+    
+    <div id="register">
+        <h1 class="title-register row">
+            <a class="col-xs-6" href="">Đăng kí thành viên</a>
+        </h1>
+        <div class="row box-register">
+            <form>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Tên đăng nhập</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Mật khẩu</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="password" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Xác nhận mật khẩu</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="password" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Địa chỉ Email</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="email" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Xưng danh</label>
+                    </div>
+                    <div class="editor-field col-sm-2 col-xs-12">
+                        <select class="form-control">
+                            <option value="Bạn">Bạn</option>
+                            <option value="Bà">Bà</option>
+                            <option value="Bác">Bác</option>
+                            <option value="Cô">Cô</option>
+                            <option value="cậu">cậu</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Họ và tên</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Năm sinh</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Giới tính</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <label class="radio-inline">
+                            <input  type="radio" name="gender">Nam
+                        </label>
+                        <label class="radio-inline">
+                            <input  type="radio" name="gender">Nữ
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Địa chỉ liên hệ</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Tỉnh thành</label>
+                    </div>
+                    <div class="editor-field col-sm-2 col-xs-12">
+                        <select class="form-control">
+                            <option value="TP.Hồ Chí Minh">TP.Hồ Chí Minh</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Hà Tĩnh">Hà Tĩnh</option>
+                            <option value="Bình Thuận">Bình Thuận</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Điện thoại</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Di động</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group col-sm-12">
+                    <div class="editor-lable col-sm-5 col-xs-12">
+                        <label>Mã xác nhận</label>
+                    </div>
+                    <div class="editor-field col-sm-4 col-xs-12">
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="editor-toolbar">
+                    <button type="submit" class="btn btn-submit">Tôi đồng ý đăng ký thành viên</button>
+                </div>
+            </form>
+        </div>
+    </div><!--end:#register-->
+</body>
+
+</html>

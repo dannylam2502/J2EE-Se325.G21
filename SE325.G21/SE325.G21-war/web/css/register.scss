@@ -1,0 +1,40 @@
+@import "var";
+#register{
+	margin-bottom: 10px;
+	.title-register{
+		font-size: 1em;
+		line-height: 2.5em;
+		font-weight: 700;
+		margin: 0 0 1px 0;
+		border-bottom: 1px solid $primary-color-boder;
+		a{
+			background-color: $primary-color-boder;
+			color: $primary-color-white;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+		}
+	}
+	.box-register{
+		border: 1px solid $primary-color-boder;
+		padding: 10px;
+		.editor-lable{
+			padding: 5px 5px 2px 5px;
+			text-align: right;
+		}
+		.group-input{
+			input{
+				display: inline;
+			}
+		}
+		.editor-toolbar{
+			text-align: center;
+			.btn-submit{
+				background-color: $primary-color-boder;
+				color: $primary-color-white;
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
+}

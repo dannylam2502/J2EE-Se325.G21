@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html ng-app="LeHoiViet" xmlns="http://www.w3.org/1999/xhtml" lang="vi-VN" xml:lang="vi-VN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>Gamevui.vn</title>
+    <!--Bootstrap core CSS-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/font-awesome/css/font-awesome.min.css">
+    <script src="lib/bootstrap/js/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="lib/bootstrap/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/gameplay.css">
+    <script src="view-source:http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="view-source:http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css"></script>
+</head>
+
+<body class="container">
+    <header class="row">
+        <div id="topbar" class="col-md-12">
+            <div class="topbar-left col-md-5 col-xs-12 row">
+                <ul>
+                    <li class="col-xs-5"><a href="#">GameVui.com in English</a></li>
+                    <li class="col-xs-3"><a href="#">Kho game</a></li>
+                    <li class="col-xs-4"><a href="#">Đấu trường</a></li>
+                </ul>
+            </div><!--end:topbar-left-->
+            <div class="topbar-right col-md-7 col-xs-12 row">
+                <form method="POST">
+                    <ul>
+                        <li class="col-sm-2 col-sm-offset-1 col-xs-12"><input type="username" placeholder="Tên đăng nhập" /></li>
+                        <li class="col-sm-2 col-sm-offset-1 col-xs-12"><input type="password" placeholder="Mật khẩu" /></li>
+                        <li class="col-sm-2 col-sm-offset-1 col-xs-12"><button>Đăng nhập</button></li>
+                        <li class="col-sm-3 col-xs-12"><a href="#"> Đăng ký thành viên</a></li>
+                    </ul>
+                    
+                </form>
+            </div><!--end:topbar-right-->
+        </div><!--end:#topbar-->
+
+        <div id="header" class="col-xs-12">
+            <dir class="col-md-5 col-xs-12 row">
+                <div class="nav-logo col-xs-5">
+                    <a href="/"><img class="img-responsive" src="images/logo.png"></a>
+                </div><!--end:nav-logo-->
+                <div class="likebox col-xs-7 col-xs-12">
+                    <div class="share-toolbox"></div>
+                    <div class="sharetip">Thích để tham gia cộng đồng Gamevui</div>
+                </div>
+            </dir>
+            
+            <div class="col-md-7 col-xs-12 row">
+                 <div class="quicksearch col-md-10 col-md-offset-1 col-xs-12">
+                    <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Nhập tên game bạn muốn chơi">
+                          <span class="input-group-addon" id="basic-addon2">Tìm kiếm</span>
+                    </div>
+                </div>
+                <div class="language-tool-box col-md-1 col-xs-12">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/flag-english.png"/><span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#"><img src="images/flag-vietnamese.png"/>Tiếng việt</a></li>
+                        <li><a href="#"><img src="images/flag-english.png"/>Tiếng Anh</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--end:#header-->
+
+        <div id="menu" class="col-md-12">
+            
+        </div><!--end:#menu-->
+    </header><!---->
+    
+    <div id="gameview">
+        <div id="gameplayer">
+            <div id="gamebox">
+                <h1 class="game-title">Game Cut The Rope</h1>
+                <div id="gamecontainer">
+                    <div id="controls">
+                        <a id="reload" href=""><i class="fa fa-refresh"></i></a>
+                        <a id="lightscreen" href=""><i class="fa fa-lightbulb-o"></i></a>
+                        <a id="favorite" href=""><i class="fa fa-star"></i></a>
+                        <a id="zoomout" href=""><i class="fa fa-search-minus"></i></a>
+                        <a id="zoomin" href=""><i class="fa fa-search-plus"></i></a>
+                        <a id="zoomreset" href=""></a>
+                        <a id="zoomfit" href=""><i class="fa fa-arrows-alt"></i></a>
+                    </div>
+                    <div id="playbox"></div>
+                </div>
+            </div><!--end:#gamebox-->
+            <div id="underGameplay">
+                <ul class="listview row">
+                    <li class="gameitem col-sm-2 col-xs-4">
+                            <a title="Võ sĩ giác đấu" href="#">
+                                <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                <div class="game-title">Võ sĩ giác đấu</div>
+                            </a>
+                    </li>
+                    <li class="gameitem col-sm-2 col-xs-4">
+                            <a title="Võ sĩ giác đấu" href="#">
+                                <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                <div class="game-title">Võ sĩ giác đấu</div>
+                            </a>
+                    </li>
+                    <li class="gameitem col-sm-2 col-xs-4">
+                            <a title="Võ sĩ giác đấu" href="#">
+                                <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                <div class="game-title">Võ sĩ giác đấu</div>
+                            </a>
+                    </li>
+                    <li class="gameitem col-sm-2 col-xs-4">
+                            <a title="Võ sĩ giác đấu" href="#">
+                                <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                <div class="game-title">Võ sĩ giác đấu</div>
+                            </a>
+                    </li> 
+                    <li class="gameitem col-sm-2 col-xs-4">
+                            <a title="Võ sĩ giác đấu" href="#">
+                                <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                <div class="game-title">Võ sĩ giác đấu</div>
+                            </a>
+                    </li>
+                    <li class="gameitem col-sm-2 col-xs-4">
+                            <a title="Võ sĩ giác đấu" href="#">
+                                <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                <div class="game-title">Võ sĩ giác đấu</div>
+                            </a>
+                    </li>
+                </ul>
+            </div><!--end:underGameplay-->
+        </div><!--end:gameplayer-->
+        <div class="clearfix"></div>
+        <div id="main" class="row">
+            <div id="content" class="col-sm-8 col-xs-12">
+                <div id="introduction">
+                    <div class="title">
+                        <h2>Trò chơi
+                            <b>Nuôi rồng</b>
+                            - game Nuoi rong
+                        </h2>
+                    </div>
+                    <div class="game-desc">
+                        <div class="desc">
+                            <p><strong>Nuôi rồng</strong> một game giải trí trực tuyến mà trong game bạn sẽ được chăm sóc một hòn đảo rồng của riêng mình. Tham gia game <strong>Nuôi rồng</strong> bạn hãy cố gắng ấp trứng để nhân giống, tạo ra những chủng loại rồng mới lạ và độc đáo nhất. Bằng cách kết hợp 2 chú rồng cùng loại với nhau, bạn hãy xây dựng cho mình một hòn đảo thật phong phú với nhiều loại rồng nhé!</p>
+                            <ul>
+                                <li>Trên máy tính sử dụng chuột để chơi.</li>
+                                <li>Trên điện thoại chạm vào màn hình để chơi</li>
+                                <li>Tải bản <a href="#">Nuôi rồng cho Android</a> để chơi trên điện thoại của bạn</li>
+                            </ul>
+                        </div>
+                        <p>Game
+                            <b>Nuôi rồng</b> 
+                            có thể chơi trực tuyến trên điện thoại di động Android, iOS, Windows Phone...
+                        </p>
+                        <p class="infotip">
+                            Nếu game không chơi được trên trình duyệt của bạn, vui lòng cài đặt
+                            <a href=""> Google Chrome mới nhất </a>
+                            để chơi
+                        </p>
+                    </div>
+                    <div  class="row">
+                        <div class="boxrating col-sm-6 col-xs-12">
+                            <h3>Đánh giá</h3>
+                            <div class="grade row">
+                                <div class="col-sm-5 col-xs-12" style="text-align: center;">
+                                    <span class="rating-title">Trung bình</span>
+                                    <span class="average-rating-value">4,5</span>
+                                    <div class="starts">
+                                        <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                        <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                        <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                        <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                    </div>
+                                    <span class="votes">7775</span>
+                                </div>
+                                <div class="col-sm-7 col-xs-12">
+                                    <ul class="histogram-table">
+                                        <li class="rating-5 row">
+                                            <span class="rate-title col-xs-6">Ồ! Rất hay</span>
+                                            <div class="col-xs-6">
+                                                <span class="rating-bar ratebox">
+                                                    <span class="rating-percent"></span>
+                                                    <span class="rating-votes">6.166 Lượt</span>
+                                                </span>
+                                                
+                                            </div>
+                                        </li>
+                                        <li class="rating-4 row">
+                                            <span class="rate-title col-xs-6">Tương đối hay</span>
+                                            <div class="col-xs-6">
+                                                <span class="rating-bar">
+                                                <span class="rating-percent"></span>
+                                            </span>
+                                                <span class="rating-votes">481 Lượt</span>
+                                            </div> 
+                                        </li>
+                                        <li class="rating-3 row">
+                                            <span class="rate-title col-xs-6">Bình thường</span>
+                                            <div class="col-xs-6">
+                                                <span class="rating-bar">
+                                                <span class="rating-percent"></span>
+                                            </span>
+                                            <span class="rating-votes">289 Lượt</span>
+                                            </div>
+                                        </li>
+                                        <li class="rating-2 row">
+                                            <span class="rate-title col-xs-6">Chẳng hay</span>
+                                            <div class="col-xs-6">
+                                                <span class="rating-bar">
+                                                    <span class="rating-percent"></span>
+                                                </span>
+                                                <span class="rating-votes">172 Lượt</span>
+                                            </div>
+                                        </li>
+                                        <li class="rating-1 row">
+                                            <span class="rate-title col-xs-6">Dở quá</span>
+                                            <div class="col-xs-6">
+                                                <span class="rating-bar">
+                                                <span class="rating-percent"></span>
+                                            </span>
+                                                <span class="rating-votes">669 Lượt</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!--end:boxrating-->
+                        <div class="playtimes col-sm-6 col-xs-12 row">
+                            <div class="col-xs-4" style="text-align: center;">
+                                <img src="images/nuoi-rong.jpg"/>
+                            </div>
+                            
+                            <div class="col-xs-8">
+                                <p>
+                                    Game 
+                                    <b>Nuôi rồng - Evolution</b>
+                                     đã có 
+                                     <b>1.273.136</b>
+                                      lượt chơi
+                                </p>
+                                <p>Được cập nhật ngày 02/01.2016</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="img-in-game">
+                        <h2>Hình ảnh trong game Nuoi rong</h2>
+                        <div class="box-img">
+                            <img class="img-responsive" src="images/nuoi-rong-hd1.jpg"/>
+                            <p>2 chú rồng cùng loại kết hợp sẽ lai tạo ra một chú rồng hoàn toàn mới lạ.</p>
+                        </div>
+                        <div class="box-img">
+                            <img class="img-responsive" src="images/nuoi-rong-hd2.jpg"/>
+                            <p>Sử dụng số tiền có được để mua những chú rồng có trong cửa hàng</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!--end:#content-->
+
+            <div id="sidebar" class="col-sm-4 col-xs-12">
+                <div class="topPlay">
+                    <h3 class="titleTop">Thử tài với game khác</h3>
+                    <div>
+                        <ul class="listview row">
+                            <li class="gameitem col-xs-4">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                    <div class="rating">
+                                        <div class="player">
+                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                            <span>1.213.715</span>
+                                        </div>
+                                        <div class="starts">
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                    <div class="rating">
+                                        <div class="player">
+                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                            <span>1.213.715</span>
+                                        </div>
+                                        <div class="starts">
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                    <div class="rating">
+                                        <div class="player">
+                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                            <span>1.213.715</span>
+                                        </div>
+                                        <div class="starts">
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star starts-gold" aria-hidden="true" ></span>
+                                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="current-gameplaying">
+                    <h3 class="title-current">Game chơi gần đây</h3>
+
+                    <div>
+                        <ul class="listview row">
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                            <li class="gameitem col-xs-4 boderhover listview-box">
+                                <a title="Võ sĩ giác đấu" href="#">
+                                    <img class="img-responsive" src="images/Pha-sao.jpg"/>
+                                    <div class="game-title">Võ sĩ giác đấu</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div><!--end:#sidebar-->
+        </div>
+    </div><!--end:#gameview-->
+</body>
+
+</html>

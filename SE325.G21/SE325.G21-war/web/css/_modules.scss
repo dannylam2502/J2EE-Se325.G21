@@ -1,0 +1,162 @@
+
+#topbar{
+	padding-top: 10px;
+	ul,li{
+		display: inline;
+	}
+
+	.topbar-left{
+
+	}
+	.topbar-right{
+		text-align: right;
+	}
+}/*end:#topbar*/
+#header{
+	.nav-logo{
+		img{
+			width: 100%;
+		}
+	}
+	.quicksearch{
+		padding-top: 20px;
+		.input-group-addon{
+			background-color: $primary-color-blue;
+			color: $primary-color-white;
+		}
+	}
+	.language-tool-box{
+		padding-top: 20px;
+		.btn-default{
+			border-color: $primary-color-white;
+		}
+		.btn{
+			padding: 0px;
+		}
+		.btn:hover{
+			background-color: $primary-color-white;
+		}
+	}
+}/*end:#header*/
+#footer{
+	margin-top: 10px;
+	color: $primary-color-black;
+	.notice{
+		padding: 10px;
+	}
+	.footer-content{
+		text-align: center;
+		border: 1px solid #eee;
+		background-color: #F9F9F9;
+		border-radius: 5px;
+		padding: 20px;
+		margin-top: 10px;
+		ul{
+			li{
+				display: inline;
+				padding: 5px;
+			}
+		}
+	}
+}
+.starts-gold{
+	color: #FFC000;
+}
+.listview{
+		text-align: center;
+		padding-top: 10px;
+		.boderhover:hover{
+			border: 1px solid #bae3ff;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.listview-box:hover{
+			background-color: #F3FAFF;
+			cursor: pointer;
+		}
+		.col-xs-2, .col-xs-4{
+			border: 1px solid #fff;
+		}
+		.gameitem{
+			text-align: center;
+			padding-top: 10px;
+			a{
+				img{
+					width: 90px;
+					height: 90px;
+					border-radius: 4px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 5px;
+				}
+				
+				.game-title{
+					font-size: 13px;
+				}
+				.rating{
+					margin-top: 15px;
+					margin-bottom: 5px;
+					font-size: 11px;
+					color: #aaa;
+				}
+
+			}
+		}
+	}
+
+#menu{
+	margin-bottom: 10px;
+	ul, li{
+			list-style: none;
+			display: inline;
+	}
+	#mainnav{
+		background-color: #008000;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding: 5px 3px 5px 3px;
+		li{
+			border: medium none;
+			border-radius: 5px 5px 0 0;
+			line-height: 20px;
+			text-align: center;
+			padding: 10px 5px 10px 5px;
+			a{
+				color: #fff;
+			}
+			a:hover{
+				color: #f2f404;
+			}
+			.active{
+
+			}
+		}
+	}
+	#categories{
+		background-color: #fff;
+		border: 1px solid #008000;
+		ul{
+			height: 40px;
+			li{
+				overflow: hidden;
+				margin: 5px;
+				position: relative;
+				white-space: nowrap;
+				width: 11.11%;
+				img{
+					border-radius: 4px;
+					height: 24px;
+					vertical-align: middle;
+					width: 24px;
+				}
+			}
+			li.down-arrow::after{
+				color: #bbb;
+				display: none;
+				margin-left: 2px;
+				content: "▾";
+			}
+			
+		}
+	}
+}

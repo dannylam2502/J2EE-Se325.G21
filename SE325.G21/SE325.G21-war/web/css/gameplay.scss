@@ -1,0 +1,173 @@
+
+#gameview{
+	#gamebox{
+		h1{
+			width: 100%;
+			border-bottom: 1px solid #eee;
+			border-top: 1px solid #eee;
+			padding: 10px 5px 10px 5px;
+		}
+	}
+
+	#gamecontainer{
+		padding-left: 100px;
+		padding-right: 100px;
+		#controls{
+			font-size: 24px;
+			padding: 0px 20px 20px 20px;
+			a{
+				margin: 5px;
+			}
+			a:hover{
+				color: #f60 !important;
+			}
+		}
+		#playbox{
+			width: 100%;
+			height: 500px;
+			background-color: #1e90ff;
+		}
+	}
+
+	#underGameplay{
+		border-top: 1px solid #eee;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+	}
+	#main{
+		border-top: 1px solid #eee;
+		#content{
+			.title{
+				h2{font-size: 1.6em;}
+				
+			}
+			.game-desc{
+				a{
+					color: #00008b;
+				}
+				margin-bottom: 20px;
+			}
+			 
+			.desc{
+				margin-bottom: 15px;
+				p{
+					text-align: justify;
+				}
+				li{
+					list-style-type: disc;
+					margin-left: 30px;
+				}
+			}
+		
+			.boxrating{
+				padding-left: 0px;
+				h3{
+					font-size: 1.6em;
+					font-weight: 400;
+					margin: 5px;
+					padding: 5px;
+					border-top: 1px solid #eee;
+					border-bottom: 1px solid #eee;
+				}
+				.grade{
+					.starts{
+						font-size: 18px;
+					}
+					.rating-title{
+						font-weight: 700;
+						display: block;
+					}
+					.average-rating-value{
+						display: block;
+						font-size: 28px;
+						line-height: 40px;
+					}
+					.votes:after{
+						content: " lượt"
+					}
+					.rate-title{
+						text-align: right;
+					}
+					li{
+						padding: 5px;
+					}
+					.histogram-table{
+							.ratebox{
+								border: 1px solid #999;
+								border-radius: 3px;
+								width: 75px;
+							}
+					}
+					
+					.rating-bar{
+						
+						span{
+							background: #88b131 none repeat scroll 0 0;
+						}
+					}
+				}
+				
+			}
+		}
+		
+		.playtimes{
+			margin: 20px 0px 10px 0px;
+			img{
+				width: 80px;
+				border-radius: 40px;
+			}
+		}
+		.img-in-game{
+			h2{
+				font-size: 18px;
+				color: #000;
+			}
+			.box-img{
+				margin:20px auto 10px auto;
+				text-align: center;
+				img{
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 10px;
+					max-width: 480px
+				}
+			}
+		}
+
+		#sidebar{
+			.topPlay{
+				border: 1px solid #16DD85;
+				border-radius: 5px;
+				margin-top: 20px;
+				.titleTop{
+					font-size: 16px;
+					background-color: #16DD85;
+					padding: 5px;
+					margin: 0px;
+					color: red;
+					text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+				}
+			}
+			.current-gameplaying{
+				border: 1px solid #f2f404;
+				border-radius: 5px;
+				margin-top: 20px;
+				.title-current{
+					font-size: 16px;
+					background-color: #f2f404;
+					padding: 5px;
+					margin: 0px;
+				}
+				.listview{
+					li{
+						margin-bottom: 5px;
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}/*main*/
+
+
+}
